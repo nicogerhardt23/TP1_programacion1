@@ -8,8 +8,15 @@
 </head>
 <body>
     <h1>Texit</h1>
-    <button>Cargar producto</button>
-    <button>Ver productos</button>
-    <form action="#"></form>
+    <form>
+        <input type="text" class="formulario" required placeholder="codigo del producto" id="codigo">
+        <input type="text" class="formulario" placeholder="nombre del producto" id="nombre">
+        <input type="text" class="formulario" placeholder="categoria del producto" id="categoria">
+        <input type="number" class="formulario" placeholder="precio del producto" id="precio">
+        <input type="text" class="formulario" placeholder="descripcion del producto" id="descripcion">
+        <button type="button" onclick="cargar()">Cargar producto</button>
+    </form>
+    <button type="button" onclick="mostrar()">Ver productos</button>
+    <section id="datos_productos"></section>
 </body>
 </html>
